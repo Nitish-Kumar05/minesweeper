@@ -1,6 +1,12 @@
 .container {
   width: 500px;
   align-content: center;
+  float: left;
+}
+
+.rules {
+  float: left;
+  margin-left: 350px;
 }
 
 .grid {
@@ -54,7 +60,7 @@ div {
 }
 
 .three {
-  color: #57da59;
+  color: #010101;
 }
 
 .four {
