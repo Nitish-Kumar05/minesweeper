@@ -18,6 +18,11 @@ const createBoard = () => {
     square.classList.add(shuffledArray[i]);
     grid.appendChild(square);
     squares.push(square);
+
+    // click
+    square.addEventListener("click", (e) => {
+      click(square);
+    });
   }
 
   // In here the numbers will be populated to remaining grids
@@ -63,3 +68,17 @@ const createBoard = () => {
 };
 
 createBoard();
+
+// click for the square action
+const click = (square) => {
+  if (square.classList.contains("mine")) {
+    console.warn("Game Over");
+  } else {
+    let total = square.getAttribute("data");
+    if (total != 0) {
+      square.classList.add("checked");
+      square.innerHTML = total;
+      return;
+    }
+  }
+};
