@@ -15,7 +15,6 @@ This is a classic Minesweeper game implemented in JavaScript, HTML, and CSS. It 
 - Right-click to place or remove flags.
 - Flags left counter.
 - Win and lose conditions.
-- Responsive design.
 
 ## How to Play
 
