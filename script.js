@@ -11,9 +11,11 @@ const createBoard = () => {
   const gameArray = emptyArray.concat(minesArray);
   const shuffledArray = gameArray.sort(() => Math.random() - 0.5);
 
+  //   This loop will populate the mines and valids in grid
   for (let i = 0; i < width * width; i++) {
     const square = document.createElement("div");
     square.setAttribute("id", i);
+    square.classList.add(shuffledArray[i]);
     grid.appendChild(square);
     squares.push(square);
   }
